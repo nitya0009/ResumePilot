@@ -1,4 +1,3 @@
-import { Gem } from "lucide-react";
 import { GEMENI_API_KEY } from "../config/config";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 

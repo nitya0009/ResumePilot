@@ -6,7 +6,7 @@ import { LoaderCircle } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { addResumeData } from "@/features/resume/resumeFeatures";
 import { useParams } from "react-router-dom";
-import { updateResumeData } from "@/Services/GlobalApi";
+
 import { toast } from "sonner";
 import { updateThisResume } from "@/Services/resumeAPI";
 
@@ -144,7 +144,7 @@ function Education({ resumeInfo, enanbledNext }) {
                     type="text"
                     name="grade"
                     onChange={(e) => handleChange(e, index)}
-                    defaultValue={item?.endDate}
+                    defaultValue={item?.grade}
                   />
                 </div>
               </div>

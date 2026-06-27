@@ -12,7 +12,7 @@ import { useParams } from "react-router-dom";
 import { toast } from "sonner";
 import { useDispatch } from "react-redux";
 import { addResumeData } from "@/features/resume/resumeFeatures";
-import { updateResumeData } from "@/Services/GlobalApi";
+
 import { updateThisResume } from "@/Services/resumeAPI";
 
 function ThemeColor({ resumeInfo }) {

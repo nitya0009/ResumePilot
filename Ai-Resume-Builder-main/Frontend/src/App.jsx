@@ -1,13 +1,10 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import Header from "./components/custom/Header";
 import { Toaster } from "./components/ui/sonner";
-import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addUserData } from "./features/user/userFeatures";
 import { startUser } from "./Services/login";
-import { resumeStore } from "./store/store";
-import { Provider } from "react-redux";
 
 function App() {
   const navigate = useNavigate();
@@ -31,17 +28,17 @@ function App() {
     fetchResponse();
   }, []);
 
-  if (!user) {
-    navigate("/");
-  }
+  useEffect(() => {
+    if (user === "") {
+      navigate("/");
+    }
+  }, [user]);
 
   return (
     <>
-      <Provider store={resumeStore}>
-        <Header user={user} />
-        <Outlet />
-        <Toaster />
-      </Provider>
+      <Header user={user} />
+      <Outlet />
+      <Toaster />
     </>
   );
 }

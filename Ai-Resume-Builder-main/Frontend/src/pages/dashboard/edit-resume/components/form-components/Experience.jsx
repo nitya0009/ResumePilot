@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addResumeData } from "@/features/resume/resumeFeatures";
 import { useParams } from "react-router-dom";
-import { updateResumeData } from "@/Services/GlobalApi";
+
 import { updateThisResume } from "@/Services/resumeAPI";
 import { toast } from "sonner";
 

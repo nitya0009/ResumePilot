@@ -29,7 +29,7 @@ function AuthPage() {
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value)) {
-      setError("Please enter a valid email address.");
+      setSignInError("Please enter a valid email address.");
       return;
     }
 
@@ -64,7 +64,7 @@ function AuthPage() {
     // Simple email validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value)) {
-      setError("Please enter a valid email address.");
+      setSignUpError("Please enter a valid email address.");
       return;
     }
 
@@ -78,8 +78,8 @@ function AuthPage() {
     try {
       const response = await registerUser(data);
       if (response?.statusCode === 201) {
-        console.log("User Registration Started");
-        handleSignInSubmit(event);
+        console.log("User Registration Success");
+        await handleSignInSubmit(event);
       }
     } catch (error) {
       console.log("User Registration Failed");

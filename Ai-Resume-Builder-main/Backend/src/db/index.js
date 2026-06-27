@@ -10,7 +10,8 @@ const connectDB = async () => {
     console.log(`MongoDB Connected: ${conn.connection.host}`);
     return conn;
   } catch (err) {
-    throw new ApiError(500, "Database connection failed", [], err.stack);
+    console.error("Database connection error details:", err);
+    throw new ApiError(500, `Database connection failed: ${err.message}`, [], err.stack);
   }
 };
 

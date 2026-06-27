@@ -7,7 +7,7 @@ const isUserAvailable = async (req, res, next) => {
   let { token } = req.cookies;
 
   if (!token) {
-    return res.status(404).json(new ApiError(404, "User not authenticated."));
+    return res.status(401).json(new ApiError(401, "User not authenticated."));
   }
 
   try {

@@ -8,9 +8,3 @@ export const resumeStore = configureStore({
     editUser: userReducers,
   },
 });
-
-export const userStore = configureStore({
-  reducer: {
-    editUser: userReducers,
-  },
-});

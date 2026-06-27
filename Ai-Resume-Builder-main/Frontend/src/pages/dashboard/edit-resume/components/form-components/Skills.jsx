@@ -6,7 +6,7 @@ import "@smastrom/react-rating/style.css";
 import { LoaderCircle } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import { addResumeData } from "@/features/resume/resumeFeatures";
-import { updateResumeData } from "@/Services/GlobalApi";
+
 import { useParams } from "react-router-dom";
 import { toast } from "sonner";
 import { updateThisResume } from "@/Services/resumeAPI";

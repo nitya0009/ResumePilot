@@ -42,7 +42,7 @@ function ViewResume() {
               <RWebShare
                 data={{
                   text: "Hello This is My resume",
-                  url: import.meta.env.VITE_BASE_URL + "/dashboard/view-resume/" + resume_id,
+                  url: window.location.origin + "/dashboard/view-resume/" + resume_id,
                   title: "Flamingos",
                 }}
                 onClick={() => toast("Resume Shared Successfully")}
