@@ -37,8 +37,8 @@ To run AI Resume Builder locally, follow these steps:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/sahidrajaansari/ai-resume-builder.git
-cd ai-resume-builder
+git clone https://github.com/ANSHU-1908/AI-reusme-Builder.git
+cd AI-reusme-Builder
 ```
 
 ### 2️⃣ Create Environment Files  
@@ -124,6 +124,24 @@ Now, you can **choose** to set up the project **with or without Docker**.
 
 ---
 
+### ☁️ Setup with Vercel (Serverless)
+
+This repository is pre-configured to be deployed on Vercel.
+
+**Backend Deployment:**
+1. In Vercel, create a new project and import this repository.
+2. Set the **Root Directory** to `Backend`.
+3. Add all your `.env` variables.
+4. Click Deploy. (Vercel will automatically use `api/index.js` and `vercel.json`).
+
+**Frontend Deployment:**
+1. Create another project in Vercel from the same repository.
+2. Set the **Root Directory** to `Frontend`.
+3. Vercel will auto-detect Vite. Add your `.env.local` variables (`VITE_APP_URL` must point to your newly deployed Vercel Backend URL).
+4. Click Deploy.
+
+---
+
 ## Features
 
 ### 1. 🔒 Secure User Authentication  
@@ -171,8 +189,8 @@ Click the **Fork** button on the top right of the repository page.
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/your-username/ai-resume-builder.git
-cd ai-resume-builder
+git clone https://github.com/your-username/AI-reusme-Builder.git
+cd AI-reusme-Builder
 ```
 
 ### 3. Create a New Branch
@@ -203,7 +221,7 @@ git push origin feature-name
 ### 7. Create a Pull Request (PR)
 
 - Go to the original repository:  
-  **https://github.com/sahidrajaansari/ai-resume-builder**
+  **https://github.com/ANSHU-1908/AI-reusme-Builder**
 - Click **"New Pull Request"** and select your branch.
 - Add a description and submit your PR.
 
