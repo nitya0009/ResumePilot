@@ -1,6 +1,6 @@
 import Header from "@/components/custom/Header";
 import React, { useEffect } from "react";
-import heroSnapshot from "@/assets/heroSnapshot.png";
+
 import { useNavigate } from "react-router-dom";
 import { FaGithub, FaCircle, FaInfoCircle } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
@@ -55,11 +55,11 @@ function HomePage() {
         <div className="px-12 mx-auto max-w-7xl">
           <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
             <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-              <span>Start</span>{" "}
-              <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
-                building a Resume
-              </span>{" "}
-              <span>for your next Job</span>
+             <span>Start building your</span>{" "}
+<span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+  Resume
+</span>{" "}
+<span>for your next Job</span>
             </h1>
             <p className="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24">
               Build. Refine. Shine. With AI-Driven Resumes
@@ -105,40 +105,10 @@ function HomePage() {
               </a>
             </div>
           </div>
-          <div className="w-full mx-auto mt-20 text-center md:w-10/12">
-            <div className="relative z-0 w-full mt-8">
-              <div className="relative overflow-hidden shadow-2xl">
-                <div className="flex items-center justify-between px-4 bg-gradient-to-r from-green-400 to-purple-500 h-11 rounded-t-xl">
-                  <div className="flex space-x-1.5">
-                    <FaCircle className="w-3 h-3 text-white hover:text-gray-300 transition duration-300 transform hover:scale-125" />
-                    <FaCircle className="w-3 h-3 text-white hover:text-gray-300 transition duration-300 transform hover:scale-125" />
-                    <FaCircle className="w-3 h-3 text-white hover:text-gray-300 transition duration-300 transform hover:scale-125" />
-                  </div>
-                  <FaInfoCircle className="text-white hover:text-gray-300 transition duration-300 transform hover:rotate-45" />
-                </div>
-                <img
-                  className="object-cover py-2 px-4 rounded-b-lg transition duration-300 transform hover:scale-105"
-                  src={heroSnapshot}
-                  alt="Dashboard"
-                />
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
-      <footer className="bg-white" aria-labelledby="footer-heading">
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 p-5 flex justify-between">
-          <p className="text-xs leading-5 text-gray-500">
-            &copy; 2024 Ai-Resume-Builder. All rights reserved.
-          </p>
-          <div>
-            <Button variant="secondary" onClick={handleClick}>
-              <FaGithub className="w-4 h-4 mr-1" />
-              GitHub
-            </Button>
-          </div>
-        </div>
-      </footer>
+      
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "/logo.svg";
+import logo from "/resume-pilot-logo.png";
 import { Button } from "../ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -36,7 +36,11 @@ function Header({user}) {
       id="printHeader"
       className="flex justify-between px-10 py-5 shadow-md items-center"
     >
-      <img src={logo} alt="logo" width={100} height={100} />
+      <img
+  src={logo}
+  alt="ResumePilot"
+  className="w-36 h-auto"
+/>
       {user ? (
         <div className="flex items-center gap-4">
           <Button
